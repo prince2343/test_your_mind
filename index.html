@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PrinceX.ai</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #eaf0f6; text-align: center; }
+        h1 { color: #2d3e50; }
+        .question-box { background: white; margin: 20px auto; padding: 20px; width: 60%; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body>
+    <h1>👑 Welcome to PrinceX.ai</h1>
+    <p>Your Personal Confidence Coach 💬</p>
+    <p>This website is created by <strong>Prince</strong> to help you build confidence and grow every day.</p>
+
+    <div class="question-box" id="question-area">
+        <h2>Today's Confidence Question</h2>
+        <p id="question">Loading question...</p>
+    </div>
+
+    <script>
+        const questions = [
+            "What’s one thing you did recently that made you proud?",
+            "How would your best friend describe your strengths?",
+            "What’s a challenge you overcame that made you stronger?",
+            "What advice would you give your younger self?",
+            "What does confidence mean to you?"
+        ];
+
+        const random = Math.floor(Math.random() * questions.length);
+        document.getElementById("question").textContent = questions[random];
+    </script>
+</body>
+</html>
