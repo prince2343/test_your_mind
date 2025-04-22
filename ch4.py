@@ -58,4 +58,12 @@ st.markdown("---")
 st.caption("Made with 💙 by Prince & AI ✨")
 
 
+# Logo और पेज सेटिंग
+st.set_page_config(page_title="Test Your Mind", page_icon="🧠", layout="centered")
+
+# Logo दिखाओ
+st.image("logo.png", width=180)  # width बढ़ा-घटा सकते हो
+
+
+
 
